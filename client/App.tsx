@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Placeholder from "./pages/Placeholder";
+import Software from "./pages/software";
 
 const queryClient = new QueryClient();
 
@@ -20,7 +21,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/software-portfolio" element={<Placeholder pageName="Software Portfolio" />} />
+          <Route path="/software-portfolio" element={<Software/>} />
           <Route path="/design-portfolio" element={<Placeholder pageName="Design Portfolio" />} />
           <Route path="/about" element={<Placeholder pageName="About" />} />
           <Route path="/projects" element={<Placeholder pageName="Projects" />} />
