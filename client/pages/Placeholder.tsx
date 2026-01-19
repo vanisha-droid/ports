@@ -39,7 +39,7 @@ export default function Placeholder({ pageName }: PlaceholderProps) {
             {pageName}
           </h1>
           <p className="font-portfolio text-2xl lg:text-3xl text-black/70 mb-12">
-            This page is coming soon!
+            This page is coming soon! 
           </p>
           <Link 
             to="/" 
