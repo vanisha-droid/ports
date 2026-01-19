@@ -13,6 +13,98 @@
   font-display: swap;
 }
 
+
+@font-face {
+  font-family: 'redactionit';
+  src: url('redaction-50-latin-400-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'redaction';
+  src: url('redaction-50-latin-400-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'menlo';
+  src: url('Menlo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+body {
+  /* Replaces the default cursor with your image */
+  cursor: url('noun-cursor-1054007.png'), auto;
+  /* Fallback to default arrow if image fails */
+}
+
+::selection {
+  background: #ffd153; /* Gold highlight */
+  color: #000; /* Black text on highlight */
+}
+
+.animate-blink {
+  animation: blink 1.2s steps(1) infinite;
+}
+
+.nav-glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: white;
+  opacity: 0;
+  filter: blur(14px);
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.nav-glow:hover::before {
+  opacity: 0.25;
+}
+
+
+body {
+  cursor: pointer; /* Changes the cursor to a hand icon */
+}
+.nav-link {
+  @apply font-portfolio text-[32px]
+  bg-[linear-gradient(currentColor,currentColor)]
+  bg-[length:0%_2px]
+  bg-left-bottom
+  bg-no-repeat
+  transition-[background-size] duration-300
+  hover:bg-[length:100%_2px];
+}
+
+
 @layer base {
   /**
    * Tailwind CSS theme

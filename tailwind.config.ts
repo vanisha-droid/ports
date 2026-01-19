@@ -15,6 +15,10 @@ export default {
     extend: {
       fontFamily: {
         'portfolio': ['ztbros'],
+        'redaction': ['redaction'],
+        'redactionit': ['redactionit'],
+        'menlo':['menlo']
+
       },
       colors: {
         border: "hsl(var(--border))",
