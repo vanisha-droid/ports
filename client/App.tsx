@@ -30,7 +30,7 @@ const App = () => (
           <Route path="/software-portfolio" element={<Software/>} />
           <Route path="/design-portfolio" element={<ExternalRedirect />}/>
           <Route path="/about" element={<Placeholder pageName="About" />} />
-          <Route path="/projects" element={<Placeholder pageName="Projects" />} />
+          <Route path="/projects" element={<Software />} />
           <Route path="/skills-tools" element={<Placeholder pageName="Skills & Tools" />} />
           <Route path="/extracurriculars" element={<Placeholder pageName="Extracurriculars" />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
