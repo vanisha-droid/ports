@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { ReactLenis } from 'lenis/react';
+import {StarsBackground} from "../../components/animate-ui/components/backgrounds/stars";
+import { cn } from '@/lib/utils';
+import { useTheme } from 'next-themes';
 
 
 export default function Software() {
@@ -9,6 +12,8 @@ export default function Software() {
   
   const imageRefs = useRef([]);
   const lastIndexRef = useRef(-1);
+    const { resolvedTheme } = useTheme();
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,7 +75,21 @@ export default function Software() {
 
   return (
             <ReactLenis root>
-
+              
+<StarsBackground
+      starColor={resolvedTheme === 'dark' ? '#FFF' : '#000'}
+      className={cn(
+        'absolute inset-0 flex items-center justify-center rounded-xl',
+        'dark:bg-[radial-gradient(ellipse_at_bottom,_#262626_0%,_#000_100%)] bg-[radial-gradient(ellipse_at_bottom,_#f5f5f5_0%,_#fff_100%)]',
+      )}
+    />
+    <StarsBackground
+      className="fixed inset-0 z-0"
+      factor={0.05}
+      speed={50}
+      starColor="#e1e1e1"
+      pointerEvents={true}
+    />
       <div className="min-h-screen bg-[#191919] overflow-x-clip">
       <div className="font-portfolio text-[#FABB1A] flex flex-wrap justify-center gap-12 py-12 border-t -translate-x-[50px] border-black/30">
         <a
