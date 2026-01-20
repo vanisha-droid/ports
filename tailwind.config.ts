@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         'portfolio': ['ztbros'],
+        'ztbrosit': ['ztbros'],
         'redaction': ['redaction'],
         'redactionit': ['redactionit'],
         'menlo':['menlo']
