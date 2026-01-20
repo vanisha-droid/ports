@@ -13,6 +13,12 @@ import Software from "./pages/software";
 
 const queryClient = new QueryClient();
 
+const ExternalRedirect = () => {
+  window.open("https://vanisha241204.wixsite.com/vanisha-1", "_blank", "noopener,noreferrer");
+  return null;
+};
+
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -22,7 +28,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/software-portfolio" element={<Software/>} />
-          <Route path="/design-portfolio" element={<Placeholder pageName="Design Portfolio" />} />
+          <Route path="/design-portfolio" element={<ExternalRedirect />}/>
           <Route path="/about" element={<Placeholder pageName="About" />} />
           <Route path="/projects" element={<Placeholder pageName="Projects" />} />
           <Route path="/skills-tools" element={<Placeholder pageName="Skills & Tools" />} />

@@ -2,12 +2,13 @@ import { NavLink } from "react-router-dom";
 import signature from "../assets/signature.png";
 import pfp from "../assets/pfp.jpg";
 import { useState, useEffect } from "react";
+import { ReactLenis } from 'lenis/react';
+
 
 const navItemClass = ({ isActive }, isScrolled) =>
   `relative font-portfolio text-[32px] transition-all duration-300
    ${isActive ? "opacity-100" : "opacity-80"}
    ${isScrolled ? "text-black" : "text-white"}`;
-
    
   
 export default function Index() {
@@ -77,9 +78,18 @@ const scrollToAbout = () => {
 
 
   return (
+        <ReactLenis root>
     <div className="min-h-screen bg-[#F1EDE2] overflow-x-hidden">
       {/* Sticky Hero Section */}
-      <div className="sticky top-0 z-40 mx-auto w-[100%] bg-[#262626] overflow-hidden mb-40">
+       <section className="sticky">
+        <div className="relative top-0 z-40 mx-auto w-full bg-[#262626] overflow-hidden mb-40
+  before:absolute before:inset-0
+  before:content-['']
+  before:bg-[url('https://www.ui-layouts.com/noise.gif')]
+  before:opacity-10
+  before:pointer-events-none
+  before:z-10
+">
         <div className="mx-auto w-[92%] max-w-[1249px] h-[780px] rounded-xl relative">
           {/* LEFT PIXEL CROSS */}
           <div className="absolute left-[410px] top-[110px]">
@@ -155,6 +165,7 @@ const scrollToAbout = () => {
           </div>
         </div>
       </div>
+      </section>
 
       <nav className="fixed top-0 left-0 right-24 z-50 flex justify-between items-center px-8 py-6">
         <div className="h-[96px]" />
@@ -302,5 +313,8 @@ const scrollToAbout = () => {
         </div>
       </main>
     </div>
+              </ReactLenis>
+
   );
+
 }
