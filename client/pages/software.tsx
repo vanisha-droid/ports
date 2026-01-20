@@ -71,7 +71,7 @@ export default function Software() {
   return (
             <ReactLenis root>
 
-    <div className="min-h-screen bg-[#191919]">
+      <div className="min-h-screen bg-[#191919] overflow-x-clip">
       <div className="font-portfolio text-[#FABB1A] flex flex-wrap justify-center gap-12 py-12 border-t -translate-x-[50px] border-black/30">
         <a
           href="/"
@@ -121,22 +121,82 @@ export default function Software() {
               <figure
                 ref={(el) => (imageRefs.current[0] = el)}
                 className="sticky top-0 h-screen -rotate-[5deg] grid place-content-center"
-              >
-                <div className="w-96 h-96 bg-white shadow-xl flex items-center justify-center p-8 text-center">
-                  <p className="text-black text-2xl font-sans">
-                    Pacman game is 
-                  </p>
+                >
+                <div className="w-[400px] bg-white font-menlo rounded-md shadow-2xl p-10 text-center space-y-6">
+                    
+                    {/* Heading */}
+                    <h2 className="text-3xl text-black font-menlo font-extrabold tracking-wide uppercase">
+                    Pacman Game
+                    </h2>
+
+                    {/* Body text */}
+                    <p className="text-black font-menlo text-lg leading-tight ">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                    </p>
+
+                    {/* Tags */}
+                    <div className="text-black font-ztbrosit flex flex-wrap justify-center gap-3 pt-4">
+                    <span className="px-5 py-2 rounded-full border border-black text-sm font-medium">
+                        Java
+                    </span>
+                    <span className="px-5 py-2 rounded-full bg-[#f5f1e8] text-sm font-medium">
+                        HTML
+                    </span>
+                    <span className="px-5 py-2 rounded-full border border-black text-sm font-medium">
+                        CSS
+                    </span>
+                    <span className="px-5 py-2 rounded-full bg-[#d9dfd6] text-sm font-medium">
+                        Next.js
+                    </span>
+                    <span className="px-5 py-2 rounded-full bg-[#e6e6e6] text-sm font-medium">
+                        Vite
+                    </span>
+                    </div>
+
                 </div>
-              </figure>
+                </figure>
 
               <figure
                 ref={(el) => (imageRefs.current[0] = el)}
-                className="sticky top-0 h-screen -rotate-[5deg] grid place-content-center"
+                className="sticky top-0 h-screen -rotate-[-5deg] grid place-content-center"
               >
-                <div className="w-96 h-96 bg-white shadow-xl flex items-center justify-center p-8 text-center">
-                  <p className="text-black text-2xl font-sans">
-                    Project One<br />Final Build
-                  </p>
+                <div className="w-[400px] bg-white font-menlo rounded-md shadow-2xl p-10 text-center space-y-6">
+                  
+                   {/* Heading */}
+                    <h2 className="text-3xl text-black font-menlo font-extrabold tracking-wide uppercase">
+                    Some thing
+                    </h2>
+
+                    {/* Body text */}
+                    <p className="text-black font-menlo text-lg leading-tight ">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                    </p>
+
+                    {/* Tags */}
+                    <div className="text-black font-ztbrosit flex flex-wrap justify-center gap-3 pt-4">
+                    <span className="px-5 py-2 rounded-full border border-black text-sm font-medium">
+                        Java
+                    </span>
+                    <span className="px-5 py-2 rounded-full bg-[#f5f1e8] text-sm font-medium">
+                        HTML
+                    </span>
+                    <span className="px-5 py-2 rounded-full border border-black text-sm font-medium">
+                        CSS
+                    </span>
+                    <span className="px-5 py-2 rounded-full bg-[#d9dfd6] text-sm font-medium">
+                        Next.js
+                    </span>
+                    <span className="px-5 py-2 rounded-full bg-[#e6e6e6] text-sm font-medium">
+                        Vite
+                    </span>
+                    </div>
+
                 </div>
               </figure>
 
@@ -163,16 +223,6 @@ export default function Software() {
                 />
               </figure>
 
-              <figure
-                ref={(el) => (imageRefs.current[3] = el)}
-                className="sticky top-0 h-screen -rotate-[3deg] grid place-content-center"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&auto=format&fit=crop"
-                  className="w-96 h-96 object-cover rounded-md shadow-xl"
-                  alt="Project 4"
-                />
-              </figure>
 
             </div>
           </div>
