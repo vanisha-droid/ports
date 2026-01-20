@@ -86,7 +86,7 @@ const scrollToAbout = () => {
   before:absolute before:inset-0
   before:content-['']
   before:bg-[url('https://www.ui-layouts.com/noise.gif')]
-  before:opacity-10
+  before:opacity-5
   before:pointer-events-none
   before:z-10
 ">
@@ -172,7 +172,7 @@ const scrollToAbout = () => {
         <div className="flex gap-8 -translate-x-96">
           {/* Software Portfolio (Homepage) */}
           <NavLink
-            to="/software-portfolio"
+            to="/projects"
             end
             className={(props) => `${navItemClass(props, isScrolled)} nav-glow`}
           >
