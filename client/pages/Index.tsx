@@ -53,7 +53,6 @@ export default function Index() {
   // Scroll detection
   useEffect(() => {
     const handleScroll = () => {
-      // Change color when scrolled past the hero section (780px height)
       setIsScrolled(window.scrollY > 700);
     };
 
@@ -165,7 +164,7 @@ const scrollToAbout = () => {
           </div>
         </div>
       </div>
-      </section>
+     
 
       <nav className="fixed top-0 left-0 right-24 z-50 flex justify-between items-center px-8 py-6">
         <div className="h-[96px]" />
@@ -180,12 +179,15 @@ const scrollToAbout = () => {
           </NavLink>
 
           {/* Design Portfolio */}
-          <NavLink
-            to="/design-portfolio"
-            className={(props) => `${navItemClass(props, isScrolled)} nav-glow`}
-          >
-            design portfolio
-          </NavLink>
+         <a
+          href="https://vanisha241204.wixsite.com/vanisha-1"
+          className={`${navItemClass({ isActive: false }, isScrolled)} nav-glow`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          design portfolio
+        </a>
+
         </div>
 
         {/* About */}
@@ -197,6 +199,7 @@ const scrollToAbout = () => {
 </button>
 
       </nav>
+       </section>
 
       {/* Main */}
       <main id="about-section" className="max-w-[1280px] mx-auto px-6 py-16 relative z-30 bg-[#F1EDE2]">
