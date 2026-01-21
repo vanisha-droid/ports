@@ -5,6 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.fonts-loading body {
+  visibility: hidden;
+}
+
+.fonts-loaded body {
+  visibility: visible;
+}
+
 @font-face {
   font-family: 'ztbros';
   src: url('ZTBrosOskon90s-Regular.otf') format('opentype');

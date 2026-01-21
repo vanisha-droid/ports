@@ -98,12 +98,12 @@ export default function Software() {
         >
           ←
         </a>
-        <a
-          href="/projects"
-          className=" text-[32px] bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 hover:bg-[length:100%_2px]"
-        >
-          projects
-        </a>
+       <a
+    href="/projects"
+    className="text-[32px] bg-[linear-gradient(currentColor,currentColor)] bg-[length:100%_2px] bg-left-bottom bg-no-repeat"
+  >
+    projects
+  </a>
         <a
           href="/skills-tools"
           className="text-[32px] bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 hover:bg-[length:100%_2px]"

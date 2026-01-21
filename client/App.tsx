@@ -10,6 +10,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Placeholder from "./pages/Placeholder";
 import Software from "./pages/software";
+import Skills from "./pages/skills";
+import Experience from "./pages/experience";
 
 const queryClient = new QueryClient();
 
@@ -31,8 +33,8 @@ const App = () => (
           <Route path="/design-portfolio" element={<ExternalRedirect />}/>
           <Route path="/about" element={<Placeholder pageName="About" />} />
           <Route path="/projects" element={<Software />} />
-          <Route path="/skills-tools" element={<Placeholder pageName="Skills & Tools" />} />
-          <Route path="/extracurriculars" element={<Placeholder pageName="Extracurriculars" />} />
+          <Route path="/skills-tools" element={<Skills />} />
+          <Route path="/experience" element={< Experience/>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
