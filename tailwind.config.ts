@@ -18,7 +18,8 @@ export default {
         'ztbrosit': ['ztbros'],
         'redaction': ['redaction'],
         'redactionit': ['redactionit'],
-        'menlo':['menlo']
+        'menlo':['menlo'],
+        'pinyon':['pinyon']
 
       },
       colors: {
