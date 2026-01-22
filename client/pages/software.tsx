@@ -123,11 +123,11 @@ export default function Software() {
           {/* LEFT TEXT */}
           <div className="sticky top-0 h-screen flex items-center justify-end pr-12 z-10 -translate-x-[90px]">
             <h1 
-              className="text-[#FABB1A] text-[140px] font-pinyon italic tracking-tight leading-[120%] transition-all duration-500 ease-in-out"
+              className="text-[#FABB1A] text-[140px] font-serif italic tracking-tight leading-[120%] transition-all duration-500 ease-in-out"
               style={{
                 opacity: isTransitioning ? 0 : 1,
                 transform: isTransitioning ? 'translateY(20px)' : 'translateY(0)',
-                
+                fontFamily: 'Pinyon Script, cursive'
               }}
             >
               {leftText}
