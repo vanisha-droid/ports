@@ -32,7 +32,7 @@ export default function Skills() {
 return (
             <ReactLenis root>
 
-<div className="relative bg-gradient-to-br from-[#D3E3FD] to-[#D5D4DD] min-h-screen overflow-hidden">
+<div className="relative bg-gradient-to-br from-[#F1EDE2] to-[#94A378] min-h-screen overflow-hidden">
 
 
     <div className="font-portfolio text-[#000000] flex flex-wrap justify-center gap-12 py-12 border-t -translate-x-[50px] border-black/30">
@@ -213,7 +213,7 @@ return (
         <MacNotes
           title="skills"
           onClose={() => closeWindow("skills")}
-          defaultPosition={{ x: 400, y: 100 }}
+          defaultPosition={{ x: 650, y: 100 }}
         />
       )}
     </div>

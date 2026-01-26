@@ -7,7 +7,7 @@ export default function Experience() {
 return (
             <ReactLenis root>
     
-    <div className="font-portfolio text-[#FABB1A] flex flex-wrap justify-center gap-12 py-12 border-t -translate-x-[50px] border-black/30">
+    <div className="font-portfolio text-[#000000] flex flex-wrap justify-center gap-12 py-12 border-t -translate-x-[50px] border-black/30">
         <a
           href="/"
           className=" text-[32px] bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_2px] bg-left-bottom -translate-x-[300px]"
