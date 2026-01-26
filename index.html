@@ -12,3 +12,14 @@
     <script type="module" src="/client/App.tsx"></script>
   </body>
 </html>
+<script>
+  document.documentElement.classList.add("fonts-loading");
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => {
+      document.documentElement.classList.remove("fonts-loading");
+    });
+  } else {
+    document.documentElement.classList.remove("fonts-loading");
+  }
+</script>
