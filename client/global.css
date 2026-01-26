@@ -6,20 +6,14 @@
 @tailwind utilities;
 
 
-.fonts-loading body {
-  visibility: hidden;
-}
 
-.fonts-loaded body {
-  visibility: visible;
-}
 
 @font-face {
   font-family: 'ztbros';
   src: url('ZTBrosOskon90s-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -46,7 +40,7 @@
   src: url('redaction-50-latin-400-normal.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -54,7 +48,7 @@
   src: url('Menlo-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -62,7 +56,7 @@
   src: url('PinyonScript-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @keyframes twinkle {

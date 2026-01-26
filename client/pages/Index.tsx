@@ -171,12 +171,14 @@ const scrollToAbout = () => {
         <div className="flex gap-8 -translate-x-96">
           {/* Software Portfolio (Homepage) */}
           <NavLink
-            to="/projects"
-            end
-            className={(props) => `${navItemClass(props, isScrolled)} nav-glow`}
-          >
-            software portfolio
-          </NavLink>
+  to="/projects"
+  end
+  onClick={() => window.scrollTo(0, 0)}
+  className={(props) => `${navItemClass(props, isScrolled)} nav-glow`}
+>
+  software portfolio
+</NavLink>
+
 
           {/* Design Portfolio */}
          <a
