@@ -12,6 +12,7 @@ import Placeholder from "./pages/Placeholder";
 import Software from "./pages/software";
 import Skills from "./pages/skills";
 import Experience from "./pages/experience";
+import Design from "./pages/design"
 
 const queryClient = new QueryClient();
 
@@ -30,7 +31,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/software-portfolio" element={<Software/>} />
-          <Route path="/design-portfolio" element={<ExternalRedirect />}/>
+          <Route path="/design-portfolio" element={<Design />}/>
           <Route path="/about" element={<Placeholder pageName="About" />} />
           <Route path="/projects" element={<Software />} />
           <Route path="/skills-tools" element={<Skills />} />

@@ -181,14 +181,14 @@ const scrollToAbout = () => {
 
 
           {/* Design Portfolio */}
-         <a
-          href="https://vanisha241204.wixsite.com/vanisha-1"
-          className={`${navItemClass({ isActive: false }, isScrolled)} nav-glow`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          design portfolio
-        </a>
+         <NavLink
+  to="/design-portfolio"
+  end
+  onClick={() => window.scrollTo(0, 0)}
+  className={(props) => `${navItemClass(props, isScrolled)} nav-glow`}
+>
+  design portfolio
+</NavLink>
 
         </div>
 

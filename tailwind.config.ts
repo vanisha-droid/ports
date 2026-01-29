@@ -20,8 +20,9 @@ export default {
         'redaction': ['redaction'],
         'redactionit': ['redactionit'],
         'menlo':['menlo'],
-        'pinyon':['pinyon']
-
+        'pinyon':['pinyon'],
+        'grotesk':['grotesk'],
+        'bib':['bib']
       },
       colors: {
         border: "hsl(var(--border))",

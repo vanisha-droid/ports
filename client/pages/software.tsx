@@ -103,7 +103,7 @@ export default function Software() {
         </a>
       </div>
 
-      <section className="text-white w-full bg-[#F1EDE2]">
+      <section className="text-white w-full bg-[#F1EDE2] ">
         <div className="grid grid-cols-[1fr_auto_1fr] px-12">
           {/* LEFT TEXT */}
           <div className="sticky top-0 h-screen flex items-center justify-end pr-12 z-10 -translate-x-[90px]">

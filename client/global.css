@@ -24,6 +24,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'grotesk';
+  src: url('PPRightGroteskMono-Fine.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @font-face {
   font-family: 'redactionit';
@@ -54,6 +62,14 @@
 @font-face {
   font-family: 'pinyon';
   src: url('PinyonScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'bib';
+  src: url('BibliophileScript-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -92,6 +108,9 @@
   transform: rotateY(180deg);
 }
 
+html {
+  font-size: clamp(14px, 1vw, 18px);
+}
 
 @keyframes blink {
   0%, 49% {
