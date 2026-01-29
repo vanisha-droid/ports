@@ -19,6 +19,7 @@ import pulp9 from "../assets/PULP-images-9.jpg"
 import pulp10 from "../assets/PULP-images-10.jpg"
 import pulp11 from "../assets/PULP-images-11.jpg"
 
+import { Marquee } from "@/components/ui/marquee"
 
 import {
   Carousel,
@@ -94,8 +95,6 @@ export default function Design() {
 >
   creations.
 </h1>
-
-
 
 </div>
           {/* Yellow wave */}
@@ -222,6 +221,22 @@ export default function Design() {
 
 </div>
 </div>
+<div className="w-screen translate-y-[45rem] overflow-hidden">
+  <Marquee pauseOnHover className="w-screen [--gap:0px]">
+    {Array.from({ length: 6 }).map((_, i) => (
+      <span
+        key={i}
+        className="text-6xl bg-[#FFEF3F] py-5 px-8 font-grotesk border-y border-black whitespace-nowrap"
+      >
+        some miscs ft. me and my friends
+      </span>
+    ))}
+  </Marquee>
+</div>
+
+
+
+
         </ReactLenis>
 
 

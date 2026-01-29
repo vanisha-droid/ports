@@ -121,11 +121,78 @@ html {
   }
 }
 
-body {
-  /* Replaces the default cursor with your image */
-  cursor: url('noun-cursor-1054007.png'), auto;
-  /* Fallback to default arrow if image fails */
+@layer base {
+  .theme {
+    --animate-marquee: marquee var(--duration) infinite linear;
+    --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite
+  }
 }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+
+@theme inline {
+  @keyframes marquee {
+  from {
+    transform: translateX(0);
+    }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+    }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+}
+
+* {
+  cursor: none !important;
+}
+
+body {
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #6c6d75;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 0.8;
+}
+
+.cursor--hover {
+  background: #FFD700; /* golden yellow */
+}
+
 
 ::selection {
   background: #ffd153; /* Gold highlight */
@@ -152,9 +219,7 @@ body {
 }
 
 
-body {
-  cursor: pointer; /* Changes the cursor to a hand icon */
-}
+
 .nav-link {
   @apply font-portfolio text-[32px]
   bg-[linear-gradient(currentColor,currentColor)]

@@ -13,6 +13,8 @@ import Software from "./pages/software";
 import Skills from "./pages/skills";
 import Experience from "./pages/experience";
 import Design from "./pages/design"
+import CustomCursor from "@/components/ui/CustomCursor";
+
 
 const queryClient = new QueryClient();
 
@@ -23,8 +25,10 @@ const ExternalRedirect = () => {
 
 
 const App = () => (
+        
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <CustomCursor /> 
       <Toaster />
       <Sonner />
       <BrowserRouter>
