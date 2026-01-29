@@ -60,16 +60,22 @@ export default function Design() {
   "
 />
 
-        <div className="font-portfolio flex justify-center py-12 border-t border-black/30 translate-x-[-90vh] z-10">
-          <a href="/" className="text-[32px]">←</a>
-        </div>
-
+       <div className="font-portfolio relative py-12 border-t border-black/30 z-10">
+  <a
+    href="/"
+    className="absolute left-20 top-1/2 -translate-y-1/2 translate-y-2 text-[32px]"
+  >
+    ←
+  </a>
+</div>
 
         {/* HERO WRAPPER */}
         <section className="relative flex justify-center items-end min-h-[55vh]">
 
-          
           {/* Headline wrapper */}
+
+          <div className="translate-y-12">
+
 <div className="relative">
   <h1
     className="
@@ -120,7 +126,7 @@ export default function Design() {
 
 </div>
           {/* Yellow wave */}
-          <div className="absolute bottom-[-162vh] left-1/2 w-[110vw] -translate-x-1/2 border border-white">
+          <div className="absolute bottom-0 translate-y-[102%] left-1/2 w-[110vw] -translate-x-1/2 border border-white">
             <svg
               className="w-full h-auto"
               viewBox="0 0 1353 933"
@@ -132,7 +138,7 @@ export default function Design() {
               />
             </svg>
           </div>
-
+</div>
         </section>
         <div className="relative">
 <img src={redheart} className="relative h-[80px] w-[80px] rotate-[-7deg] -translate-x-[-60px] -translate-y-[-50px]"> 
