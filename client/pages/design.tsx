@@ -18,6 +18,7 @@ import pulp8 from "../assets/PULP-images-8.jpg"
 import pulp9 from "../assets/PULP-images-9.jpg"
 import pulp10 from "../assets/PULP-images-10.jpg"
 import pulp11 from "../assets/PULP-images-11.jpg"
+import dfk from "../assets/sas.png"
 
 import { Marquee } from "@/components/ui/marquee"
 
@@ -40,12 +41,33 @@ export default function Design() {
 <div className="relative bg-white overflow-x-clip min-h-[200vh]">
 
         {/* Top nav */}
-        <div className="font-portfolio flex justify-center py-12 border-t border-black/30 translate-x-[-90vh]">
+         <img
+  src={dfk}
+  alt=""
+  className="
+    absolute
+    top-0
+    left-20px
+    w-4/5
+    h-auto
+    max-h-screen
+    object-cover
+    z-0
+    -translate-x-[0px]
+    -translate-y-[0px]
+    origin-top-left
+    pointer-events-none
+  "
+/>
+
+        <div className="font-portfolio flex justify-center py-12 border-t border-black/30 translate-x-[-90vh] z-10">
           <a href="/" className="text-[32px]">←</a>
         </div>
 
+
         {/* HERO WRAPPER */}
-        <section className="relative flex justify-center items-end min-h-[60vh]">
+        <section className="relative flex justify-center items-end min-h-[55vh]">
+
           
           {/* Headline wrapper */}
 <div className="relative">
@@ -98,7 +120,7 @@ export default function Design() {
 
 </div>
           {/* Yellow wave */}
-          <div className="absolute bottom-[-162vh] left-1/2 w-[110vw] -translate-x-1/2">
+          <div className="absolute bottom-[-162vh] left-1/2 w-[110vw] -translate-x-1/2 border border-white">
             <svg
               className="w-full h-auto"
               viewBox="0 0 1353 933"
@@ -123,7 +145,8 @@ export default function Design() {
       h-[300px]
       w-auto
       rotate-[5deg]
-      -translate-x-1/2"
+      -translate-x-1/2
+      z-10"
   />
 </div>
 <div className="px-20 md:px-48 mt-98 md:mt-114 -translate-y-[-430px] -translate-x-[-105px]">
@@ -132,7 +155,7 @@ export default function Design() {
     {/* Text */}
     <div className="font-grotesk text-black leading-none text-right -translate-y-[-50px]">
       <p className="text-4xl md:text-5xl lg:text-6xl flex flex-col gap-1 items-end">
-        <span className="bg-yellow-300 border-1-white px-2 w-fit">software</span>
+        <span className="bg-yellow-300 border-2 border-white px-2 w-fit">software</span>
         <span>by</span>
         <span>profession,</span>
         <span className="bg-blue-200 px-2 w-fit">design</span>
