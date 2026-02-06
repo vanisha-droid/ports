@@ -412,8 +412,10 @@ const scrollToAbout = () => {
     </div>
 
 
+{/* NEW SECTION====================================================== */}
+
 <main id="about-section">
-    <section className="text-white w-full bg-[#F1EDE2] ">
+    <section className="text-white w-full bg-[#F1EDE2]  pointer-events-none">
         <div className="grid grid-cols-[1fr_auto_1fr] px-12">
           {/* LEFT TEXT */}
           <div className="sticky top-0 h-screen flex items-center justify-end pr-12 z-10 -translate-x-[90px]">
@@ -434,7 +436,7 @@ const scrollToAbout = () => {
               {/* ====== IMAGE 1 (index 0) - Triggers "final" / "year" ====== */}
               <figure
   ref={(el) => (imageRefs.current[0] = el)}
-  className="sticky top-0 h-screen -rotate-[5deg] grid place-content-center"
+  className="sticky top-0 h-screen -rotate-[5deg] grid place-content-center pointer-events-auto"
 >
   <FlipCard
     front={
@@ -561,7 +563,7 @@ const scrollToAbout = () => {
 
  <figure
   ref={(el) => (imageRefs.current[0] = el)}
-  className="sticky top-0 h-screen -rotate-[3deg] grid place-content-center"
+  className="sticky top-0 h-screen -rotate-[3deg] grid place-content-center pointer-events-auto"
 >
   <FlipCard
     front={
@@ -675,7 +677,7 @@ const scrollToAbout = () => {
               {/* ====== IMAGE 2 (index 1) - Triggers "third" / "year" ====== */}
                <figure
   ref={(el) => (imageRefs.current[1] = el)}
-  className="sticky top-0 h-screen -rotate-[-3deg] grid place-content-center"
+  className="sticky top-0 h-screen -rotate-[-3deg] grid place-content-center pointer-events-auto"
 >
   <FlipCard
     front={

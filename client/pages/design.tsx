@@ -179,7 +179,7 @@ export default function Design() {
 
   </div>
 </div>
-<div className="px-20 md:px-48 mt-98 md:mt-114 -translate-y-[-35rem]">
+<div className="relative px-20 md:px-48 mt-98 md:mt-114 top-10 -translate-y-[-35rem]">
   <div className="font-grotesk text-black leading-none text-right">
     <div className="flex items-center justify-end gap-6">
 
@@ -250,7 +250,7 @@ export default function Design() {
 
 </div>
 </div>
-<div className="w-screen translate-y-[45rem] overflow-hidden">
+<div className="relative w-full translate-y-[45rem] overflow-hidden">
   <Marquee pauseOnHover className="w-screen [--gap:0px]">
     {Array.from({ length: 6 }).map((_, i) => (
       <span
