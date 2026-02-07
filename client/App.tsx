@@ -13,6 +13,7 @@ import Software from "./pages/software";
 import Skills from "./pages/skills";
 import Experience from "./pages/experience";
 import Design from "./pages/design"
+import About from "./pages/about"
 import CustomCursor from "@/components/ui/CustomCursor";
 
 
@@ -36,7 +37,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/software-portfolio" element={<Software/>} />
           <Route path="/design-portfolio" element={<Design />}/>
-          <Route path="/about" element={<Software />} />
+          <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Software />} />
           <Route path="/skills-tools" element={<Skills />} />
           <Route path="/experience" element={< Experience/>} />

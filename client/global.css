@@ -34,6 +34,15 @@
 
 
 @font-face {
+  font-family: 'grotesk2';
+  src: url('PPRightGroteskMono-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
   font-family: 'redactionit';
   src: url('redaction-50-latin-400-italic.ttf') format('truetype');
   font-weight: normal;
@@ -85,6 +94,9 @@
     transform: scale(1);
   }
 }
+
+
+
 
 .flip-card {
   perspective: 1200px;

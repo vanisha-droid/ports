@@ -22,7 +22,8 @@ export default {
         'menlo':['menlo'],
         'pinyon':['pinyon'],
         'grotesk':['grotesk'],
-        'bib':['bib']
+        'bib':['bib'],
+        'grotesk2':['grotesk2']
       },
       colors: {
         border: "hsl(var(--border))",
