@@ -23,7 +23,13 @@ export default {
         'pinyon':['pinyon'],
         'grotesk':['grotesk'],
         'bib':['bib'],
-        'grotesk2':['grotesk2']
+        'grotesk2':['grotesk2'],
+        'avant':['avant'],
+        'groovy':['groovy'],
+        'mess':['mess'],
+        'nokia':['nokia'],
+        'bohme':['bohme'],
+        'narnia':['narnia']
       },
       colors: {
         border: "hsl(var(--border))",

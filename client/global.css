@@ -32,6 +32,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'mess';
+  src: url('Messapia-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @font-face {
   font-family: 'grotesk2';
@@ -41,6 +49,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'narnia';
+  src: url('Narnia.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'redactionit';
@@ -55,6 +70,37 @@
 @font-face {
   font-family: 'redaction';
   src: url('redaction-50-latin-400-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'bohme';
+  src: url('Bohme.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'nokia';
+  src: url('nokiafc22.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'groovy';
+  src: url('groovy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'avant';
+  src: url('AVGARDD_2.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;

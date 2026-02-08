@@ -31,48 +31,38 @@ export default function About() {
 
       {/* Main Content */}
       <div className="relative mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 lg:pt-20 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
-          {/* Left Column - Images */}
-          <div className="flex flex-col items-start space-y-6 lg:space-y-8">
-            {/* Stars */}
-            <div className="relative w-full max-w-md -translate-x-[-2rem]">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/d4105062545a0b365786574ef649197da4d6a967?width=214"
-                alt=""
-                className="w-20 sm:w-24 lg:w-[107px] h-auto drop-shadow-md absolute left-12 sm:left-16 lg:left-24 top-0 rotate-[31deg]"
-              />
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/f5ac8df9420b1a56441ffa6ceb3434cf7ba40ed9?width=214"
-                alt=""
-                className="w-20 sm:w-24 lg:w-[107px] h-auto drop-shadow-md absolute left-4 sm:left-6 lg:left-8 top-16 sm:top-20 lg:top-24"
-              />
+  <main className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 pt-8 md:pt-16 lg:pt-24 pb-12">
+        <div className="max-w-[1200px] mx-auto">
+          {/* Decorative Initial with Text */}
+          <div className="relative">
+            {/* Large Decorative T */}
+            <div className="absolute left-16 top-0 -translate-y-2 md:-translate-y-2">
+              <span 
+  className="font-pinyon leading-none text-[#FFEF3F]"
+  style={{ 
+    fontSize: 'clamp(100px, 12vw, 168px)',
+    WebkitTextStroke: '1px #000000',
+  }}
+>
+  T
+</span>
+
             </div>
 
-            {/* Snoopy Image */}
-            <div className="relative mt-20 sm:mt-24 lg:mt-28 -translate-y-[-8rem]">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/61266fdf58c5c1a08c17d6a16155f04784baa2eb?width=710"
-                alt="Snoopy character"
-                className="w-full max-w-xs sm:max-w-sm lg:max-w-md drop-shadow-md"
-              />
-            </div>
-          </div>
-
-          {/* Right Column - Text */}
-         <div className="relative flex flex-col space-y-6 lg:space-y-8 pt-8 lg:pt-0 -translate-x-[8rem]">
-  <div className="font-grotesk2 
-    text-lg sm:text-xl lg:text-[40px]
-    leading-snug lg:leading-[1.2]
-    max-w-4xl">
-              <span className="text-[#3A30FF]">
-                I'm Vanisha and I'm in my final year studying Software Engineering.{" "}
-              </span>
-              <span className="text-[#3A30FF]">
-                As someone who had always loved problem-solving and math, I've always been very inclined towards all things tech! I have learnt a large variety of languages and tools but my main interest is towards backend (security, algorithms, site reliability) primarily because it always feels like a puzzle I want to tackle!
-                Design is also something I've enjoyed since I was a child which I produced in various ways whether it be painting, graphic design or UI for my projects. This love was my main reason to learn frontend and also code this website :) I hope you enjoy seeing it as much as I did making it.             </span>
+            {/* Main Text Content */}
+<div className="pl-12 sm:pl-16 md:pl-20 lg:pl-28 
+                pr-6 sm:pr-10 md:pr-16 lg:pr-24
+                pt-12 sm:pt-16 md:pt-20 lg:pt-24 
+                -translate-y-[1.8rem]">
+              <p className="font-grotesk2 text-[#3A30FF] opacity-75 text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-[40px] 2xl:text-[50px] leading-tight md:leading-tight lg:leading-tight">
+    &nbsp;&nbsp;&nbsp;he first time I understood passion was solving <span className="font-nokia inline-block"> math </span> in primary school and this fire got its <span className="font-avant inline-block">kindling</span> when I started using tech. I also come from a place with <span className="font-groovy inline-block">extremely</span> rich architectures, art and maximalism; So naturally, I’ve always been interested in <span className="font-pinyon inline-block">design</span> and it comes out in some shape or form in everything I’ve done (whether it is <span className="font-mess inline-block">decorating</span> my dorm or it is designing a presentation when we’re only getting marked on how we speak or it is finding new outfit combinations). <span className="font-bohme inline-block">Programming</span> gave me a way to understand the world and with design, I found a way to add colors in it.               </p>
+              
+              <p className="font-grotesk2 text-[#3A30FF] opacity-75 text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-[40px] 2xl:text-[50px] leading-tight md:leading-tight lg:leading-tight mt-6 md:mt-8 lg:mt-10">
+Other interests of mine include <span className="font-narnia inline-block">cooking</span> (pasta), singing (offkey), dancing (offbeat) and my favorite thing in the world:  talking -- with anyone and everyone.              </p>
             </div>
           </div>
         </div>
+      </main>
 
         {/* Links Section */}
         <div className="max-w-7xl mx-auto mt-16 sm:mt-20 lg:mt-32 space-y-6 sm:space-y-8 lg:space-y-12">

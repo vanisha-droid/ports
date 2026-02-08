@@ -369,7 +369,7 @@ const scrollToAbout = () => {
 
                   <div className="grid grid-cols-[110px_1fr] items-start">
                     <span className="text-3xl text-left">currently:</span>
-                    <span className="text-4xl text-left">studying software eng.</span>
+                    <span className="text-4xl text-left">learning TypeScript</span>
                   </div>
                 </div>
               </div>
@@ -404,9 +404,7 @@ const scrollToAbout = () => {
               rotate-[8deg] hover:rotate-3 transition-transform duration-300
               flex items-center justify-center">
               <p className="font-portfolio text-[30px] leading-relaxed text-center">
-                hi! i'm vanisha & i LOVE creating, whether it's solutions,
-                websites, designs, or security. This is my portfolio website
-                or basically my extended & ~decorated~ resume!
+                hi! i'm vanisha & i dabble primarily in backend (security, testing and algorithms) but use frontend frequently for my projects! I welcome a good challenge.
               </p>
             </div>
           </div>
