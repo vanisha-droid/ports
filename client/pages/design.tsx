@@ -19,6 +19,7 @@ import pulp9 from "../assets/PULP-images-9.jpg"
 import pulp10 from "../assets/PULP-images-10.jpg"
 import pulp11 from "../assets/PULP-images-11.jpg"
 import dfk from "../assets/sas.png"
+import { Link } from "react-router-dom";
 
 import { Marquee } from "@/components/ui/marquee"
 
@@ -60,14 +61,29 @@ export default function Design() {
   "
 />
 
-       <div className="font-portfolio relative py-12 border-t border-black/30 z-10">
-  <a
-    href="/"
-    className="absolute left-20 top-1/2 -translate-y-1/2 translate-y-2 text-[32px]"
-  >
-    ←
-  </a>
-</div>
+<nav className="relative z-10 flex items-start justify-between px-6 sm:px-8 lg:px-9 pt-6 sm:pt-7">
+              <div className="flex gap-6 sm:gap-12 lg:gap-16">
+                <Link
+                  to="/"
+                  className="text-[#000000] font-portfolio text-xl sm:text-2xl lg:text-[32px] leading-none hover:opacity-80 transition-opacity"
+                >
+                  software portfolio
+                </Link>
+                <Link
+                  to="/design-portfolio"
+                  className="text-[#000000] font-portfolio text-xl sm:text-2xl lg:text-[32px] leading-none hover:opacity-80 transition-opacity"
+                >
+                  design portfolio
+                </Link>
+              </div>
+              <Link
+                to="/about"
+                className="text-[#000000] font-portfolio text-xl sm:text-2xl lg:text-[32px] leading-none hover:opacity-80 transition-opacity"
+              >
+                about
+              </Link>
+            </nav>
+      
 
         {/* HERO WRAPPER */}
         <section className="relative flex justify-center items-end min-h-[55vh]">

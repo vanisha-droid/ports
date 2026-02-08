@@ -61,19 +61,15 @@ export default function About() {
           {/* Right Column - Text */}
          <div className="relative flex flex-col space-y-6 lg:space-y-8 pt-8 lg:pt-0 -translate-x-[8rem]">
   <div className="font-grotesk2 
-    text-lg sm:text-xl lg:text-[50px]
+    text-lg sm:text-xl lg:text-[40px]
     leading-snug lg:leading-[1.2]
     max-w-4xl">
               <span className="text-[#3A30FF]">
-                There are many variations of passages of Lorem Ipsum available,{" "}
+                I'm Vanisha and I'm in my final year studying Software Engineering.{" "}
               </span>
               <span className="text-[#3A30FF]">
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text.
-              </span>
+                As someone who had always loved problem-solving and math, I've always been very inclined towards all things tech! I have learnt a large variety of languages and tools but my main interest is towards backend (security, algorithms, site reliability) primarily because it always feels like a puzzle I want to tackle!
+                Design is also something I've enjoyed since I was a child which I produced in various ways whether it be painting, graphic design or UI for my projects. This love was my main reason to learn frontend and also code this website :) I hope you enjoy seeing it as much as I did making it.             </span>
             </div>
           </div>
         </div>

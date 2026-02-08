@@ -257,46 +257,49 @@ const scrollToAbout = () => {
         </div>
       </div>
      
+     
 
-      <nav className="fixed top-0 left-0 right-24 z-50 flex justify-between items-center px-8 py-6">
-        <div className="h-[96px]" />
-        <div className="flex gap-8 -translate-x-96">
-          {/* Software Portfolio (Homepage) */}
-          <button
-  onClick={scrollToAbout}
-  className={`${navItemClass({ isActive: false }, isScrolled)} nav-glow`}
->
-  software portfolio
-</button>
+     <nav className="fixed top-0 left-0 right-0 z-50 flex items-start justify-between px-6 sm:px-8 lg:px-9 pt-6 sm:pt-7 -translate-y-2">
+  {/* Left group */}
+  <div className="flex gap-6 sm:gap-12 lg:gap-16">
+    {/* Software Portfolio */}
+    <button
+      onClick={scrollToAbout}
+      className={`${navItemClass({ isActive: false }, isScrolled)} nav-glow`}
+    >
+      software portfolio
+    </button>
 
+    {/* Design Portfolio */}
+    <NavLink
+      to="/design-portfolio"
+      end
+      onClick={() => window.scrollTo(0, 0)}
+      className={(props) =>
+        `${navItemClass(props, isScrolled)} nav-glow`
+      }
+    >
+      design portfolio
+    </NavLink>
+  </div>
 
-          {/* Design Portfolio */}
-         <NavLink
-  to="/design-portfolio"
-  end
-  onClick={() => window.scrollTo(0, 0)}
-  className={(props) => `${navItemClass(props, isScrolled)} nav-glow`}
->
-  design portfolio
-</NavLink>
+  {/* Right item */}
+  <NavLink
+    to="/about"
+    end
+    onClick={() => window.scrollTo(0, 0)}
+    className={(props) =>
+      `${navItemClass(props, isScrolled)} nav-glow`
+    }
+  >
+    about
+  </NavLink>
+</nav>
 
-        </div>
-
-        {/* About */}
-        <NavLink
-  to="/about"
-  end
-  onClick={() => window.scrollTo(0, 0)}
-  className={(props) => `${navItemClass(props, isScrolled)} nav-glow`}
->
-  about
-</NavLink>
-
-      </nav>
        </section>
 
       {/* Main */}
-      <main id="some-section" className="max-w-[1280px] mx-auto px-6 py-16 relative z-30 bg-[#F1EDE2]">
+      <main id="some-section" className="max-w-[1280px] mx-auto px-6 py-16 z-30 bg-[#F1EDE2]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mb-28">
           {/* LEFT: Yellow ID Card */}
           <div className="relative">
