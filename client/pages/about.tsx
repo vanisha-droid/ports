@@ -186,9 +186,9 @@ Other interests of mine include <span className="font-narnia inline-block">cooki
               <p className="text-[#3A30FF] font-grotesk2 text-sm sm:text-base lg:text-xl">
                 Vanisha Goyal
               </p>
-              <p className="text-[#3A30FF] font-grotesk2 text-sm sm:text-base lg:text-xl mt-1">
+              <a href="mailto:vanisha.241204@gmail.com" className="text-[#3A30FF] font-grotesk2 text-sm sm:text-base lg:text-xl mt-1">
                 vanisha.241204@gmail.com
-              </p>
+              </a>
             </div>
 
             {/* Color squares */}

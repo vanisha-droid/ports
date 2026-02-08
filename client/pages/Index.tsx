@@ -651,7 +651,7 @@ const scrollToAbout = () => {
         </h2>
 
         <p className="text-black font-menlo text-lg leading-tight">
-          Built a fully functioning pacman game using Java and various coding design patterns to implement featr=ures to ensure highly modular and extensible code.
+          Built a fully functioning pacman game using Java and various coding design patterns to implement features to ensure highly modular and extensible code.
         </p>
 
         <div className="text-black font-ztbrosit flex flex-wrap justify-center gap-3 pt-4">
@@ -765,7 +765,7 @@ const scrollToAbout = () => {
         </h2>
 
         <p className="text-black font-menlo text-lg leading-tight">
-          Built a fully functioning pacman game using Java and various coding design patterns to implement featr=ures to ensure highly modular and extensible code.
+          Built a fully functioning pacman game using Java and various coding design patterns to implement features to ensure highly modular and extensible code.
         </p>
 
         <div className="text-black font-ztbrosit flex flex-wrap justify-center gap-3 pt-4">
