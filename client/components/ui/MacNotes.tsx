@@ -15,9 +15,21 @@ export default function MacNotes({
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const [isMinimized, setIsMinimized] = useState(false);
-  const [noteContent, setNoteContent] = useState(
-    "skills..."
-  );
+const [noteContent, setNoteContent] = useState<string>(`• Full-Stack Development
+• REST API Development
+• Database Design & Optimization
+• Cloud Deployment & CI/CD
+• System Design
+• DevOps & Containerization
+• Agile/Scrum Collaboration
+• Data Analysis
+• UI/UX Design
+• Data Analysis
+• Communication
+• Brainstorming/Ideating
+• Problem Solving
+`);
+
   const windowRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { ReactLenis } from 'lenis/react';
+import resume from "../2026resume.pdf";
 
 
 export default function About() {
   return (
+    <ReactLenis>
     <div className="min-h-screen bg-[#EEEEEE] overflow-x-hidden">
       {/* Navigation */}
       <nav className="flex items-start justify-between px-6 sm:px-8 lg:px-9 pt-6 sm:pt-7">
@@ -96,7 +98,7 @@ Other interests of mine include <span className="font-narnia inline-block">cooki
           {/* Resume */}
           <div className="group">
             <a
-              href="/resume.pdf"
+            href={resume}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 sm:gap-6 lg:gap-8 hover:opacity-80 transition-opacity"
@@ -201,5 +203,6 @@ Other interests of mine include <span className="font-narnia inline-block">cooki
         </div>
       </div>
     </div>
+    </ReactLenis>
   );
 }

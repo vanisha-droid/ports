@@ -904,25 +904,82 @@ const scrollToAbout = () => {
                 defaultPosition={{ x: 100, y: 100 }}
               >
                 <div className="space-y-4">
-                  <h3 className="font-semibold text-gray-800 text-lg">Development Tools</h3>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center gap-2">
-                      <span className="text-yellow-600">📁</span> Visual Studio Code
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">📁</span> Git
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">📁</span> Terminal
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-gray-600">📁</span> Node.js
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-red-600">📁</span> Docker
-                    </li>
-                  </ul>
-                </div>
+  <h3 className="font-semibold text-gray-800 text-lg">Development</h3>
+  <ul className="space-y-2 text-gray-700">
+    
+    {/* Code & Environment */}
+    <li className="flex items-center gap-2">
+      <span className="text-yellow-600">📁</span> Visual Studio Code
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-blue-600">📁</span> Git
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-blue-600">📁</span> Linux
+    </li>
+
+    <li className="flex items-center gap-2">
+      <span className="text-purple-600">📁</span> Gradle
+    </li>
+
+    {/* Cloud & DevOps */}
+      <h3 className="font-semibold text-gray-800 text-lg">Cloud</h3>
+
+    <li className="flex items-center gap-2">
+      <span className="text-orange-500">📁</span> AWS
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-red-600">📁</span> Docker
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-red-500">📁</span> Jenkins
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-black">📁</span> Vercel
+    </li>
+
+    {/* Collaboration */}
+      <h3 className="font-semibold text-gray-800 text-lg">Collaboration</h3>
+
+    <li className="flex items-center gap-2">
+      <span className="text-orange-600">📁</span> Jira
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-blue-500">📁</span> Confluence
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-blue-700">📁</span> Bitbucket
+    </li>
+
+    {/* Databases */}
+      <h3 className="font-semibold text-gray-800 text-lg">Databases</h3>
+
+    <li className="flex items-center gap-2">
+      <span className="text-blue-800">📁</span> PostgreSQL
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-blue-600">📁</span> MySQL
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-yellow-500">📁</span> Firebase
+    </li>
+
+    {/* Design Tools */}
+      <h3 className="font-semibold text-gray-800 text-lg">Design</h3>
+
+    <li className="flex items-center gap-2">
+      <span className="text-purple-500">📁</span> Figma
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-blue-400">📁</span> Adobe Photoshop
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-pink-500">📁</span> Canva
+    </li>
+
+  </ul>
+</div>
+
               </MacFinder>
             )}
       
@@ -932,27 +989,73 @@ const scrollToAbout = () => {
                 title="languages"
                 onClose={() => closeWindow("languages")}
                 defaultPosition={{ x: 200, y: 150 }}
-              >
-                <div className="space-y-4">
-                  <h3 className="font-semibold text-gray-800 text-lg">Programming Languages</h3>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center gap-2">
-                      <span className="text-yellow-500">📄</span> JavaScript
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-blue-600">📄</span> TypeScript
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-purple-600">📄</span> Python
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-red-600">📄</span> React
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="text-green-600">📄</span> Node.js
-                    </li>
-                  </ul>
-                </div>
+              >{/* Programming Languages */}
+<div className="space-y-4">
+  <h3 className="font-semibold text-gray-800 text-lg">
+    Programming Languages
+  </h3>
+  <ul className="space-y-2 text-gray-700">
+    
+    <li className="flex items-center gap-2">
+      <span className="text-yellow-500">📄</span> JavaScript
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-blue-600">📄</span> TypeScript
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-purple-600">📄</span> Python (Advanced)
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-red-600">📄</span> Java
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-blue-700">📄</span> C
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-indigo-700">📄</span> C++
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-blue-800">📄</span> SQL
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-green-700">📄</span> R
+    </li>
+
+  </ul>
+</div>
+
+{/* Frameworks & Libraries */}
+<div className="space-y-4 mt-8">
+  <h3 className="font-semibold text-gray-800 text-lg">
+    Frameworks & Libraries
+  </h3>
+  <ul className="space-y-2 text-gray-700">
+    
+    <li className="flex items-center gap-2">
+      <span className="text-cyan-500">📦</span> React
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-black">📦</span> Next.js
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-black">📦</span> Vite
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-green-600">📦</span> Node.js
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-green-700">📦</span> Spring Boot
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-gray-600">📦</span> Django
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="text-gray-500">📦</span> Flask
+    </li>
+
+  </ul>
+</div>
+
               </MacFinder>
             )}
       

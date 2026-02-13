@@ -19,9 +19,25 @@ import pulp9 from "../assets/PULP-images-9.jpg"
 import pulp10 from "../assets/PULP-images-10.jpg"
 import pulp11 from "../assets/PULP-images-11.jpg"
 import dfk from "../assets/sas.png"
+
+
+import lover1 from "../assets/lover1.png"
+import lover2 from "../assets/lover2.png"
+import lover3 from "../assets/lover3.png"
+import lover4 from "../assets/lover4.png"
+import lover5 from "../assets/lover5.png"
+import lover6 from "../assets/lover6.png"
+import lover7 from "../assets/lover7.png"
+import lover8 from "../assets/lover8.png"
+import lover9 from "../assets/lover9.png"
+
 import { Link } from "react-router-dom";
 
 import { Marquee } from "@/components/ui/marquee"
+import  ScrollCarousel from "@/components/ui/horizontal"
+import ScrollElement from '@/components/ui/scroll-animation';
+
+
 
 import {
   Carousel,
@@ -280,7 +296,104 @@ export default function Design() {
 </div>
 
 
+<section className="mt-[36rem]">
+  <ScrollCarousel />
+</section>
 
+<div className="font-bib text-[500px] -translate-x-[5px] text-[#E97DAE]">
+  <img src={redheart} className="relative h-[140px] w-[140px] -translate-x-[-440px] -translate-y-[-470px]"> 
+</img>
+  lover &nbsp;reimagined
+</div>
+
+
+<div className='py-2'>
+        <div className=' columns-3'>
+          <ScrollElement
+            viewport={{ once: true, amount: 0.5, margin: '0px 0px 0px 0px' }}
+          >
+            <img
+              src= {lover1}
+              alt=''
+              className='w-full mb-2'
+            />
+          </ScrollElement>
+          <ScrollElement
+            viewport={{ once: true, amount: 0.5, margin: '0px 0px 0px 0px' }}
+          >
+            <img
+              src= {lover2}
+              alt=''
+              className='w-full mb-2'
+            />
+          </ScrollElement>
+          <ScrollElement
+            viewport={{ once: true, amount: 0.5, margin: '0px 0px 0px 0px' }}
+          >
+            <img
+              src={lover3}
+              alt=''
+              className='w-full mb-2'
+            />
+          </ScrollElement>
+
+          <ScrollElement
+            viewport={{ once: true, amount: 0.5, margin: '0px 0px 0px 0px' }}
+            // @ts-ignore
+          >
+            <img
+              src={lover8}
+              alt=''
+              className='w-full mb-2'
+            />
+          </ScrollElement>
+          <ScrollElement
+            viewport={{ once: true, amount: 0.5, margin: '0px 0px 0px 0px' }}
+          >
+            <img
+              src={lover5}
+              alt=''
+              className='w-full mb-2'
+            />
+          </ScrollElement>
+          <ScrollElement
+            viewport={{ once: true, amount: 0.5, margin: '0px 0px 0px 0px' }}
+          >
+            <img
+              src={lover7}
+              alt=''
+              className='w-full mb-2'
+            />
+          </ScrollElement>
+          <ScrollElement
+            viewport={{ once: true, amount: 0.5, margin: '0px 0px 0px 0px' }}
+          >
+            <img
+              src={lover4}
+              alt=''
+              className='w-full mb-2'
+            />
+          </ScrollElement>
+          <ScrollElement
+            viewport={{ once: true, amount: 0.5, margin: '0px 0px 0px 0px' }}
+          >
+            <img
+              src={lover6}
+              alt=''
+              className='w-full mb-2'
+            />
+          </ScrollElement>
+          <ScrollElement
+            viewport={{ once: true, amount: 0.5, margin: '0px 0px 0px 0px' }}
+          >
+            <img
+              src={lover9}
+              alt=''
+              className='w-full mb-2'
+            />
+          </ScrollElement>
+        </div>
+      </div>
 
         </ReactLenis>
 

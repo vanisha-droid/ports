@@ -15,7 +15,7 @@ import Experience from "./pages/experience";
 import Design from "./pages/design"
 import About from "./pages/about"
 import CustomCursor from "@/components/ui/CustomCursor";
-
+import Resume from "./2026resume.pdf";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +41,7 @@ const App = () => (
           <Route path="/projects" element={<Software />} />
           <Route path="/skills-tools" element={<Skills />} />
           <Route path="/experience" element={< Experience/>} />
+          <Route path="/resume" element={< Resume/>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
