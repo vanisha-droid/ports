@@ -300,7 +300,7 @@ export default function Design() {
   <ScrollCarousel />
 </section>
 
-<div className="font-bib text-[500px] -translate-x-[5px] text-[#E97DAE]">
+<div className="font-bib text-[500px] whitespace-nowrap -translate-x-[5px] text-[#E97DAE]">
   <img src={redheart} className="relative h-[140px] w-[140px] -translate-x-[-440px] -translate-y-[-470px]"> 
 </img>
   lover &nbsp;reimagined

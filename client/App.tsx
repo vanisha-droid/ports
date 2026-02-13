@@ -16,6 +16,7 @@ import Design from "./pages/design"
 import About from "./pages/about"
 import CustomCursor from "@/components/ui/CustomCursor";
 import Resume from "./2026resume.pdf";
+import ReactLenis from "lenis/react";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const ExternalRedirect = () => {
 
 
 const App = () => (
+  <ReactLenis root>
         
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -41,13 +43,13 @@ const App = () => (
           <Route path="/projects" element={<Software />} />
           <Route path="/skills-tools" element={<Skills />} />
           <Route path="/experience" element={< Experience/>} />
-          <Route path="/resume" element={< Resume/>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
+  </ReactLenis>
 );
 
 createRoot(document.getElementById("root")!).render(<App />);
