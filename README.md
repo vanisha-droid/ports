@@ -9,11 +9,11 @@ Designed on Figma, starter template components built using builder.io; Framework
 
 Run the following commands in the order:
 
-``bash
+```bash
 pnpm install/npm install
 npm run build
 npm start
-```
+
 
 Then navigate to http://localhost:3000
 
