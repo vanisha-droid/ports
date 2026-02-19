@@ -13,6 +13,7 @@ Run the following commands in the order:
 pnpm install/npm install
 npm run build
 npm start
+```
 
 
 Then navigate to http://localhost:3000
