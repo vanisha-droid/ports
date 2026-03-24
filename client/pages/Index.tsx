@@ -369,7 +369,7 @@ const scrollToAbout = () => {
 
                   <div className="grid grid-cols-[110px_1fr] items-start">
                     <span className="text-3xl text-left">currently:</span>
-                    <span className="text-4xl text-left">learning TypeScript</span>
+                    <span className="text-4xl text-left">learning animations</span>
                   </div>
                 </div>
               </div>
