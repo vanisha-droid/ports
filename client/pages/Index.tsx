@@ -404,7 +404,7 @@ const scrollToAbout = () => {
               rotate-[8deg] hover:rotate-3 transition-transform duration-300
               flex items-center justify-center">
               <p className="font-portfolio text-[30px] leading-relaxed text-center">
-                hi! i'm vanisha & i dabble primarily in backend (security, testing and algorithms) but use frontend frequently for my projects! I welcome a good challenge.
+                hi! i'm vanisha and i love creating. i primarily dabble in backend (python, java) but use frontend frequently because i love designing things!
               </p>
             </div>
           </div>
