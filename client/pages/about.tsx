@@ -93,33 +93,7 @@ Other interests of mine include <span className="font-narnia inline-block">cooki
             </a>
             <div className="h-px bg-portfolio-blue mt-2 sm:mt-3 lg:mt-4 max-w-lg"></div>
           </div>
-
-          {/* Resume */}
-          <div className="group">
-            <a
-            href={resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 sm:gap-6 lg:gap-8 hover:opacity-80 transition-opacity"
-            >
-              <h2 className="text-[#3A30FF] font-grotesk text-4xl sm:text-6xl lg:text-[96px] leading-none">
-                Resumé
-              </h2>
-              <svg
-                className="w-5 h-5 sm:w-6 sm:h-6 lg:w-[22px] lg:h-5 flex-shrink-0 mt-2 sm:mt-3 lg:mt-4"
-                viewBox="0 0 22 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M-0.672673 19.2601C-1.08133 19.6316 -1.11145 20.264 -0.73994 20.6727C-0.368433 21.0813 0.264015 21.1115 0.672673 20.7399L0 20L-0.672673 19.2601ZM22.9989 0.0475646C23.0251 -0.504095 22.5992 -0.972599 22.0476 -0.998869L13.0578 -1.42695C12.5061 -1.45322 12.0376 -1.02731 12.0113 -0.475652C11.9851 0.0760078 12.411 0.544512 12.9626 0.570782L20.9536 0.951303L20.573 8.94225C20.5468 9.49391 20.9727 9.96241 21.5244 9.98868C22.076 10.015 22.5445 9.58904 22.5708 9.03738L22.9989 0.0475646ZM0 20L0.672673 20.7399L22.6727 0.73994L22 0L21.3273 -0.73994L-0.672673 19.2601L0 20Z"
-                  fill="#3A30FF"
-                />
-              </svg>
-            </a>
-            <div className="h-px bg-portfolio-blue mt-2 sm:mt-3 lg:mt-4 max-w-md"></div>
-          </div>
-
+          
           {/* Github */}
           <div className="group">
             <a
